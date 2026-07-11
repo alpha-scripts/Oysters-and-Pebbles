@@ -20,14 +20,12 @@ const filteredCars = computed(() =>
 <template>
   <main>
     <section class="page-hero page-hero-compact" aria-label="Inventory">
-      <div class="page-hero-bg" aria-hidden="true">
-        <div class="hero-grid"></div>
-      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container page-hero-inner page-hero-row">
         <div>
           <div class="eyebrow">Full stock gallery</div>
           <h1 class="page-hero-title">Available <em>inventory.</em></h1>
-          <p class="page-hero-sub">Every vehicle in our Ikeja showroom — inspected, warrantied, and ready to drive. Filter by type or tap to enquire on WhatsApp.</p>
+          <p class="page-hero-sub">Every vehicle listed is physically in our Ikeja showroom — inspected, warrantied, and ready to drive today. Filter by type or tap to enquire on WhatsApp.</p>
         </div>
         <div class="inventory-summary" aria-live="polite">
           <span class="inventory-summary-num">{{ cars.length }}</span>

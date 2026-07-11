@@ -21,13 +21,11 @@ const partners = [
   <main>
     <!-- ░░ PAGE HERO ░░ -->
     <section class="page-hero" aria-label="About us">
-      <div class="page-hero-bg" aria-hidden="true">
-        <div class="hero-grid"></div>
-      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container page-hero-inner">
         <div class="eyebrow">About O&amp;P Autos</div>
-        <h1 class="page-hero-title">The team behind<br />Lagos' trusted <em>dealership.</em></h1>
-        <p class="page-hero-sub">Oysters &amp; Pebbles Autos was built on a simple promise: honest vehicles, transparent pricing, and care that lasts long after you drive off our lot.</p>
+        <h1 class="page-hero-title">Six years in business.<br />Every vehicle <em>warrantied.</em></h1>
+        <p class="page-hero-sub">A registered Lagos dealership on Oba Akran Avenue, Ikeja — transparent pricing, a written warranty on every vehicle, and after-sales support that doesn't stop at the sale.</p>
       </div>
     </section>
 
@@ -39,7 +37,7 @@ const partners = [
           <h2>Built on trust,<br />driven by Lagos</h2>
           <p>Oysters and Pebbles Auto Limited is a fully registered auto dealership with more than six years of experience, on a mission to provide brand new vehicles at reasonable and affordable prices.</p>
           <p>We understand that many organisations have significant fleet management needs of their own, but the cost of meeting them can be steep. We're poised to bridge that gap — offering quality vehicles at a reasonable discount, with value-added services built in.</p>
-          <p>From our showroom on Oba Akran Avenue in Ikeja, we've helped families and businesses across Lagos find the right car — whether that's a rugged workhorse or a statement of success.</p>
+          <p>From our showroom on Oba Akran Avenue in Ikeja, we've helped families and businesses across Lagos find the right vehicle — including fleet deals for organisations sourcing multiple cars at once.</p>
           <div class="about-stats">
             <div class="about-stat">
               <span class="about-num">500+</span>
@@ -176,8 +174,8 @@ const partners = [
     <section class="section section-cta">
       <div class="container cta-inner">
         <div class="eyebrow">Visit us</div>
-        <h2>Come meet the team in person</h2>
-        <p>Our showroom on Oba Akran Avenue is open Monday to Saturday, 8am–6pm. We'd love to show you around and help you find your next car.</p>
+        <h2>See the vehicles in person</h2>
+        <p>Our showroom on Oba Akran Avenue is open Monday to Saturday, 8am–6pm. No appointment needed.</p>
         <div class="cta-actions">
           <router-link to="/#contact" class="btn-primary btn-lg">Get in touch</router-link>
           <router-link to="/inventory" class="btn-ghost btn-lg">Browse inventory</router-link>

@@ -8,11 +8,11 @@
         <div class="logo">
           <img src="/images/logo.png" alt="" class="logo-mark" />
           <div class="logo-text">
-            <span class="logo-name" style="color: #fff;">O&amp;P Autos</span>
+            <span class="logo-name">O&amp;P Autos</span>
             <span class="logo-location">Lagos · Ikeja</span>
           </div>
         </div>
-        <p>Lagos' premier dealership for quality vehicles, flexible financing, and genuine after-care.</p>
+        <p>Quality vehicles, real warranty, and fast financing — from our Ikeja showroom.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -46,7 +46,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <span>© 2025 Oysters &amp; Pebbles Autos. All rights reserved.</span>
+        <span>© 2026 Oysters &amp; Pebbles Autos. All rights reserved.</span>
         <span>14 Oba Akran Avenue, Ikeja, Lagos State, Nigeria</span>
       </div>
     </div>

@@ -127,7 +127,7 @@ async function handleSubmit() {
 }
 
 .contact-form-error {
-  color: #e08a8a;
+  color: #b03434;
   font-size: 12px;
 }
 
@@ -139,14 +139,14 @@ async function handleSubmit() {
 
 .contact-form-success {
   color: var(--green);
-  background: rgba(91, 191, 143, 0.1);
-  border: 1px solid rgba(91, 191, 143, 0.25);
+  background: rgba(31, 138, 84, 0.1);
+  border: 1px solid rgba(31, 138, 84, 0.25);
 }
 
 .contact-form-error-note {
-  color: #e08a8a;
-  background: rgba(224, 138, 138, 0.08);
-  border: 1px solid rgba(224, 138, 138, 0.2);
+  color: #b03434;
+  background: rgba(176, 52, 52, 0.06);
+  border: 1px solid rgba(176, 52, 52, 0.2);
 }
 
 .contact-form button[disabled] {

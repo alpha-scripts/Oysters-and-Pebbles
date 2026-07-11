@@ -6,13 +6,11 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
   <main>
     <!-- ░░ PAGE HERO ░░ -->
     <section class="page-hero" aria-label="Services">
-      <div class="page-hero-bg" aria-hidden="true">
-        <div class="hero-grid"></div>
-      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container page-hero-inner">
         <div class="eyebrow">Our services</div>
-        <h1 class="page-hero-title">Complete automotive <em>solutions</em></h1>
-        <p class="page-hero-sub">From purchase to long-term care, we provide everything you need for a seamless ownership experience.</p>
+        <h1 class="page-hero-title">Sales, financing, and <em>after-sales</em> — in one place</h1>
+        <p class="page-hero-sub">Everything is handled in-house: the sale, the warranty, the financing, and the maintenance that comes after. No third parties, no runaround.</p>
       </div>
     </section>
 
@@ -33,7 +31,7 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <h3>3–5 Year Warranty</h3>
-            <p>Comprehensive coverage on engine and gearbox up to 100,000 km. Drive with total peace of mind.</p>
+            <p>Engine and gearbox covered up to 100,000 km, in writing, on every vehicle sold.</p>
             <router-link to="/#contact" class="btn-outline" style="margin-top: 8px;">Learn more</router-link>
           </div>
           <div class="service-card" v-reveal>
@@ -65,7 +63,7 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <h3>24/7 Support</h3>
-            <p>Our team is available around the clock. Whether it's a question or an emergency, we're a WhatsApp away.</p>
+            <p>Message us anytime — WhatsApp is monitored around the clock, including weekends.</p>
             <a href="https://wa.me/2347030424072" class="btn-outline" style="margin-top: 8px;" target="_blank" rel="noopener">Chat now</a>
           </div>
         </div>
@@ -77,8 +75,8 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
       <div class="container">
         <div class="section-header section-header-centered">
           <div class="eyebrow">More services</div>
-          <h2>Expert care for your vehicle</h2>
-          <p class="section-sub">Professional services to keep your car in peak condition.</p>
+          <h2>Keeping your vehicle running</h2>
+          <p class="section-sub">Repairs, detailing, and trade-in valuations — booked the same way as everything else, on WhatsApp.</p>
         </div>
 
         <div class="services-grid">
@@ -247,8 +245,8 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
     <section class="section section-cta">
       <div class="container cta-inner">
         <div class="eyebrow">Get started</div>
-        <h2>Ready for your next service?</h2>
-        <p>Contact our team today to schedule any service or inquire about parts availability. We're here to help Monday to Saturday, 8am–6pm.</p>
+        <h2>Book a service or check parts availability</h2>
+        <p>Message us on WhatsApp for the fastest response, or visit Monday to Saturday, 8am–6pm.</p>
         <div class="cta-actions">
           <a href="https://wa.me/2347030424072?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20services" class="btn-primary btn-lg" target="_blank" rel="noopener">
             <WhatsAppIcon :size="16" />
