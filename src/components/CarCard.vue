@@ -7,10 +7,12 @@ const props = defineProps({
 })
 
 const imageWidth = props.variant === 'gallery' ? 800 : 500
-const imageSrc = computed(() => `${props.car.imageBase}&w=${imageWidth}`)
+const imageSrc = computed(() =>
+  props.car.imageBase.startsWith('/') ? props.car.imageBase : `${props.car.imageBase}&w=${imageWidth}`
+)
 const specs = computed(() => [props.car.engineSpec, props.car.transmission, props.car.drivetrain])
 const waHref = computed(
-  () => `https://wa.me/2348000000000?text=${encodeURIComponent(props.car.whatsappMessage)}`
+  () => `https://wa.me/2347030424072?text=${encodeURIComponent(props.car.whatsappMessage)}`
 )
 const isFeaturedBadge = computed(() => props.car.badgeExtra === 'Featured')
 const catBadgeClass = computed(() => (props.car.badgeCategory === 'Electric' ? 'badge-ev' : 'badge-cat'))

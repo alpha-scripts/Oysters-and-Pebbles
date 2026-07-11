@@ -11,24 +11,9 @@ const team = [
   { initials: 'EO', name: 'Ekujumi Olabode', role: 'After Sales Personnel', bio: 'Provides skilled after-sales support and vehicle maintenance services.' }
 ]
 
-const sponsors = [
-  { name: 'TotalEnergies Nigeria', type: 'Fuel & lubricants partner', gold: true },
-  { name: 'Access Bank', type: 'Vehicle financing sponsor' },
-  { name: 'Leadway Assurance', type: 'Insurance sponsor' },
-  { name: 'Mobil 1', type: 'Engine care sponsor' },
-  { name: 'Lagos State MOT', type: 'Compliance & registration' },
-  { name: 'Nigeria Auto Journal', type: 'Media sponsor' }
-]
-
 const partners = [
-  { name: 'Toyota Nigeria', type: 'Authorised distributor', gold: true },
-  { name: 'Lexus West Africa', type: 'Premium brand partner' },
-  { name: 'GAC Motor Nigeria', type: 'Official dealer partner' },
-  { name: 'Stanbic IBTC', type: 'Auto loan partner' },
-  { name: 'Coscharis Group', type: 'Parts & supply chain' },
-  { name: 'BYD Africa', type: 'Electric vehicle partner' },
-  { name: 'Mitsubishi Motors', type: 'Brand partner' },
-  { name: 'Autochek Africa', type: 'Vehicle inspection partner' }
+  { name: 'GAC Group', type: 'Vehicle manufacturer partner', logo: '/images/partners/gac-group.jpg' },
+  { name: 'Autochek', type: 'Vehicle inspection & valuation partner', logo: '/images/partners/autochek.jpg' }
 ]
 </script>
 
@@ -52,9 +37,9 @@ const partners = [
         <div class="about-content">
           <div class="eyebrow">Our story</div>
           <h2>Built on trust,<br />driven by Lagos</h2>
-          <p>Oysters &amp; Pebbles Autos was founded with a single conviction: that every Lagos driver deserves access to quality vehicles at honest prices, backed by genuine after-care.</p>
-          <p>From our showroom on Oba Akran Avenue in Ikeja, we've helped hundreds of families and businesses find the right car — whether that's a rugged workhorse or a statement of success.</p>
-          <p>What started as a small import operation has grown into one of Ikeja's most trusted automotive destinations, with a team dedicated to making every purchase straightforward and stress-free.</p>
+          <p>Oysters and Pebbles Auto Limited is a fully registered auto dealership with more than six years of experience, on a mission to provide brand new vehicles at reasonable and affordable prices.</p>
+          <p>We understand that many organisations have significant fleet management needs of their own, but the cost of meeting them can be steep. We're poised to bridge that gap — offering quality vehicles at a reasonable discount, with value-added services built in.</p>
+          <p>From our showroom on Oba Akran Avenue in Ikeja, we've helped families and businesses across Lagos find the right car — whether that's a rugged workhorse or a statement of success.</p>
           <div class="about-stats">
             <div class="about-stat">
               <span class="about-num">500+</span>
@@ -73,19 +58,7 @@ const partners = [
         <div class="about-visual" aria-hidden="true">
           <div class="about-img-block">
             <div class="about-img-placeholder">
-              <div class="about-img-inner">
-                <svg viewBox="0 0 300 200" fill="none" aria-hidden="true">
-                  <rect width="300" height="200" fill="#0f0f0f"/>
-                  <path d="M30 130 L55 80 Q70 55 100 50 L200 50 Q230 55 245 80 L270 130 L280 140 L280 160 L20 160 L20 140 Z" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.3)" stroke-width="2"/>
-                  <rect x="85" y="58" width="55" height="22" rx="4" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
-                  <rect x="145" y="58" width="55" height="22" rx="4" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
-                  <circle cx="70" cy="160" r="20" fill="#151515" stroke="rgba(201,168,76,0.4)" stroke-width="2"/>
-                  <circle cx="70" cy="160" r="10" fill="#1a1a1a" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-                  <circle cx="230" cy="160" r="20" fill="#151515" stroke="rgba(201,168,76,0.4)" stroke-width="2"/>
-                  <circle cx="230" cy="160" r="10" fill="#1a1a1a" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-                  <text x="150" y="185" text-anchor="middle" font-size="11" fill="rgba(201,168,76,0.5)" font-family="sans-serif">OYSTERS &amp; PEBBLES AUTOS</text>
-                </svg>
-              </div>
+              <img src="/images/gallery/showroom-1.jpg" alt="Oysters and Pebbles Autos showroom on Oba Akran Avenue, Ikeja" class="about-img-photo" />
             </div>
             <div class="about-badge-float">
               <span class="about-badge-num">500+</span>
@@ -107,8 +80,8 @@ const partners = [
 
         <div class="mission-statement">
           <blockquote>
-            <p>"We believe buying a car should feel like a partnership, not a gamble. Every vehicle we sell carries our name — and our reputation depends on your satisfaction."</p>
-            <footer>— The O&amp;P Autos Founding Team</footer>
+            <p>"Discover a world of automotive excellence. From luxury sedans to rugged SUVs, we source and sell the finest brands of vehicles from around the globe. Your dream car is just a visit away."</p>
+            <footer>— Oysters &amp; Pebbles Autos</footer>
           </blockquote>
         </div>
 
@@ -117,29 +90,36 @@ const partners = [
             <div class="value-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3>Integrity First</h3>
-            <p>Full disclosure on every vehicle's history, condition, and pricing. No hidden fees, no surprises.</p>
+            <h3>Professionalism</h3>
+            <p>Delivering exceptional service with expertise and dedication.</p>
           </div>
           <div class="value-card value-card-gold" v-reveal>
             <div class="value-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
             </div>
-            <h3>Customer-Centred</h3>
-            <p>Your needs come first — from the first WhatsApp message to years of after-sales support.</p>
+            <h3>Trust</h3>
+            <p>Premium automotive solutions delivered with integrity and precision.</p>
           </div>
           <div class="value-card" v-reveal>
             <div class="value-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <h3>Quality Assured</h3>
-            <p>Every vehicle is inspected, certified, and backed by our 3–5 year engine and gearbox warranty.</p>
+            <h3>Integrity</h3>
+            <p>Upholding the highest ethical standards in every interaction.</p>
           </div>
           <div class="value-card" v-reveal>
             <div class="value-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <h3>Rooted in Lagos</h3>
-            <p>We know this city — its roads, its traffic, its people. We stock cars built for Lagos life.</p>
+            <h3>Customer Satisfaction</h3>
+            <p>Prioritizing your needs to exceed expectations at every turn.</p>
+          </div>
+          <div class="value-card" v-reveal>
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <h3>Social Responsibility</h3>
+            <p>Committed to making a positive impact on our community and environment.</p>
           </div>
         </div>
       </div>
@@ -173,47 +153,18 @@ const partners = [
       </div>
     </section>
 
-    <!-- ░░ SPONSORS ░░ -->
-    <section class="section section-dark" id="sponsors">
-      <div class="container">
-        <div class="section-header section-header-centered">
-          <div class="eyebrow">Our sponsors</div>
-          <h2>Backed by brands that believe in us</h2>
-          <p class="section-sub">We're proud to be supported by organisations that share our commitment to quality and community.</p>
-        </div>
-
-        <div class="partners-grid sponsors-grid">
-          <div
-            v-for="sponsor in sponsors"
-            :key="sponsor.name"
-            class="partner-tile"
-            :class="{ 'partner-tile-gold': sponsor.gold }"
-            v-reveal
-          >
-            <span class="partner-name">{{ sponsor.name }}</span>
-            <span class="partner-type">{{ sponsor.type }}</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ░░ PARTNERS ░░ -->
-    <section class="section" id="partners">
+    <section class="section section-dark" id="partners">
       <div class="container">
         <div class="section-header section-header-centered">
           <div class="eyebrow">Our partners</div>
           <h2>Working together for you</h2>
-          <p class="section-sub">Strategic partnerships with manufacturers, financiers, and service providers help us deliver a complete ownership experience.</p>
+          <p class="section-sub">Strategic partnerships with manufacturers and vehicle-inspection specialists help us deliver a complete ownership experience.</p>
         </div>
 
-        <div class="partners-grid">
-          <div
-            v-for="partner in partners"
-            :key="partner.name"
-            class="partner-tile"
-            :class="{ 'partner-tile-gold': partner.gold }"
-            v-reveal
-          >
+        <div class="partners-grid partners-grid-compact">
+          <div v-for="partner in partners" :key="partner.name" class="partner-tile" v-reveal>
+            <img :src="partner.logo" :alt="partner.name" class="partner-logo-img" />
             <span class="partner-name">{{ partner.name }}</span>
             <span class="partner-type">{{ partner.type }}</span>
           </div>

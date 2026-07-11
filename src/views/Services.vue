@@ -66,7 +66,7 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
             </div>
             <h3>24/7 Support</h3>
             <p>Our team is available around the clock. Whether it's a question or an emergency, we're a WhatsApp away.</p>
-            <a href="https://wa.me/2348000000000" class="btn-outline" style="margin-top: 8px;" target="_blank" rel="noopener">Chat now</a>
+            <a href="https://wa.me/2347030424072" class="btn-outline" style="margin-top: 8px;" target="_blank" rel="noopener">Chat now</a>
           </div>
         </div>
       </div>
@@ -126,6 +126,20 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
             </div>
             <h3>Air Filters</h3>
             <p>High-performance air filters for optimal engine efficiency and longevity.</p>
+          </div>
+          <div class="service-card" v-reveal>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M7 9h10"/><path d="M7 15h10"/></svg>
+            </div>
+            <h3>Piston Liners</h3>
+            <p>Precision-fit piston liners to restore engine compression and performance.</p>
+          </div>
+          <div class="service-card" v-reveal>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.5"/><circle cx="15" cy="9" r="1.5"/><circle cx="9" cy="15" r="1.5"/><circle cx="15" cy="15" r="1.5"/></svg>
+            </div>
+            <h3>Cylinder Heads</h3>
+            <p>Genuine and remanufactured cylinder heads for a wide range of makes and models.</p>
           </div>
           <div class="service-card" v-reveal>
             <div class="service-icon">
@@ -236,7 +250,7 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
         <h2>Ready for your next service?</h2>
         <p>Contact our team today to schedule any service or inquire about parts availability. We're here to help Monday to Saturday, 8am–6pm.</p>
         <div class="cta-actions">
-          <a href="https://wa.me/2348000000000?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20services" class="btn-primary btn-lg" target="_blank" rel="noopener">
+          <a href="https://wa.me/2347030424072?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20services" class="btn-primary btn-lg" target="_blank" rel="noopener">
             <WhatsAppIcon :size="16" />
             Chat on WhatsApp
           </a>

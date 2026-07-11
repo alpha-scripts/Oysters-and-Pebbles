@@ -13,7 +13,7 @@ const messagesByPath = {
 const route = useRoute()
 const href = computed(() => {
   const message = messagesByPath[route.path] ?? messagesByPath['/']
-  return `https://wa.me/2348000000000?text=${encodeURIComponent(message)}`
+  return `https://wa.me/2347030424072?text=${encodeURIComponent(message)}`
 })
 </script>
 

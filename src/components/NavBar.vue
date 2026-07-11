@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import LogoMark from './icons/LogoMark.vue'
 import WhatsAppIcon from './icons/WhatsAppIcon.vue'
 import { useNavScroll } from '../composables/useNavScroll'
 
@@ -16,15 +15,13 @@ function closeMenu() {
   <div class="announce-bar">
     <span>Free delivery within Lagos on all vehicle purchases</span>
     <span class="sep">·</span>
-    <a href="tel:+2348000000000">Call us: 0800 000 0000</a>
+    <a href="tel:+2347030424072">Call us: +234 703 042 4072</a>
   </div>
 
   <header class="nav-wrap" id="nav" :class="{ scrolled }">
     <nav class="nav-inner">
       <router-link to="/" class="logo" aria-label="Oysters and Pebbles Autos home">
-        <div class="logo-mark">
-          <LogoMark color="#0a0a0a" />
-        </div>
+        <img src="/images/logo.png" alt="" class="logo-mark" />
         <div class="logo-text">
           <span class="logo-name">O&amp;P Autos</span>
           <span class="logo-location">Lagos · Ikeja</span>
@@ -40,7 +37,7 @@ function closeMenu() {
       </ul>
 
       <div class="nav-actions">
-        <a href="https://wa.me/2348000000000" class="btn-wa" target="_blank" rel="noopener">
+        <a href="https://wa.me/2347030424072" class="btn-wa" target="_blank" rel="noopener">
           <WhatsAppIcon :size="15" />
           WhatsApp
         </a>
@@ -67,7 +64,7 @@ function closeMenu() {
         <li><router-link to="/#contact" @click="closeMenu">Contact</router-link></li>
       </ul>
       <div class="mobile-actions">
-        <a href="https://wa.me/2348000000000" class="btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a href="https://wa.me/2347030424072" class="btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
         <router-link to="/#contact" class="btn-primary" @click="closeMenu">Book a Test Drive</router-link>
       </div>
     </div>

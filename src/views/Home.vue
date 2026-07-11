@@ -28,10 +28,10 @@ const filteredCars = computed(() =>
             Drive the car<br />
             you <em>deserve.</em>
           </h1>
-          <p class="hero-sub">Toyota, Lexus, Mitsubishi, Honda, GAC &amp; more. 3–5 year warranty on every vehicle. Flexible financing available.</p>
+          <p class="hero-sub">Discover a world of automotive excellence. Whether you're after a luxury sedan, a robust SUV, or a rugged truck, your dream car is just a visit away — Toyota, Lexus, Mitsubishi, Honda, GAC &amp; more, every vehicle backed by a 3–5 year warranty.</p>
           <div class="hero-ctas">
             <router-link to="/inventory" class="btn-primary btn-lg">Browse Inventory</router-link>
-            <a href="https://wa.me/2348000000000" class="btn-ghost btn-lg" target="_blank" rel="noopener">
+            <a href="https://wa.me/2347030424072" class="btn-ghost btn-lg" target="_blank" rel="noopener">
               <WhatsAppIcon :size="16" />
               Chat on WhatsApp
             </a>
@@ -61,12 +61,12 @@ const filteredCars = computed(() =>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-card-stack">
             <div class="hc hc-back">
-              <div class="hc-label">Toyota Land Cruiser · 2023</div>
+              <div class="hc-label">Toyota Land Cruiser · 2024</div>
               <div class="hc-price">₦45,000,000</div>
             </div>
             <div class="hc hc-mid">
-              <div class="hc-label">Lexus RX 350 · 2022</div>
-              <div class="hc-price">₦38,000,000</div>
+              <div class="hc-label">Lexus GX 550 · 2024</div>
+              <div class="hc-price">₦58,000,000</div>
             </div>
             <div class="hc hc-front">
               <div class="hc-badge">Featured</div>
@@ -157,35 +157,35 @@ const filteredCars = computed(() =>
         <div class="brands-grid">
           <div class="brand-tile" v-reveal>
             <span class="brand-name">Toyota</span>
-            <span class="brand-tagline">Reliability redefined</span>
+            <span class="brand-tagline">Quality, innovation and sustainability</span>
           </div>
           <div class="brand-tile brand-tile-gold" v-reveal>
             <span class="brand-name">Lexus</span>
-            <span class="brand-tagline">Pursuit of perfection</span>
+            <span class="brand-tagline">Where power meets sophistication</span>
           </div>
           <div class="brand-tile" v-reveal>
             <span class="brand-name">Mitsubishi</span>
-            <span class="brand-tagline">Drive your ambition</span>
+            <span class="brand-tagline">Built for diverse driving needs</span>
           </div>
           <div class="brand-tile" v-reveal>
             <span class="brand-name">Honda</span>
-            <span class="brand-tagline">The power of dreams</span>
+            <span class="brand-tagline">Fuel-efficient, practical design</span>
           </div>
           <div class="brand-tile" v-reveal>
             <span class="brand-name">Hyundai</span>
-            <span class="brand-tagline">New thinking, new possibilities</span>
+            <span class="brand-tagline">Performance, technology and style</span>
           </div>
           <div class="brand-tile" v-reveal>
             <span class="brand-name">Ford</span>
-            <span class="brand-tagline">Built tough, driven far</span>
+            <span class="brand-tagline">A century of innovation and durability</span>
           </div>
           <div class="brand-tile brand-tile-gold" v-reveal>
             <span class="brand-name">GAC</span>
-            <span class="brand-tagline">Premium Chinese engineering</span>
+            <span class="brand-tagline">Style, comfort and advanced features</span>
           </div>
           <div class="brand-tile" v-reveal>
-            <span class="brand-name">BYD</span>
-            <span class="brand-tagline">Electric future, now</span>
+            <span class="brand-name">Electric Vehicles</span>
+            <span class="brand-tagline">A cleaner, more sustainable alternative</span>
           </div>
         </div>
       </div>
@@ -246,6 +246,28 @@ const filteredCars = computed(() =>
       </div>
     </section>
 
+    <!-- ░░ PROMOS ░░ -->
+    <section class="section promo-section">
+      <div class="container promo-grid">
+        <div class="promo-card" v-reveal>
+          <img src="/images/gallery/promo-top-sellers.png" alt="" class="promo-img" aria-hidden="true" />
+          <div class="promo-content">
+            <span class="eyebrow">Best deal on top sellers</span>
+            <h3>Get 30% Off</h3>
+            <router-link to="/inventory" class="btn-outline">Shop now</router-link>
+          </div>
+        </div>
+        <div class="promo-card" v-reveal>
+          <img src="/images/gallery/promo-aftersales.png" alt="" class="promo-img" aria-hidden="true" />
+          <div class="promo-content">
+            <span class="eyebrow">Free and affordable aftersales services</span>
+            <h3>After Sales Services</h3>
+            <router-link to="/services" class="btn-outline">Shop now</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ░░ ABOUT / WHY US ░░ -->
     <section class="section section-about" id="about">
       <div class="container about-inner">
@@ -273,19 +295,7 @@ const filteredCars = computed(() =>
         <div class="about-visual" aria-hidden="true">
           <div class="about-img-block">
             <div class="about-img-placeholder">
-              <div class="about-img-inner">
-                <svg viewBox="0 0 300 200" fill="none" aria-hidden="true">
-                  <rect width="300" height="200" fill="#0f0f0f"/>
-                  <path d="M30 130 L55 80 Q70 55 100 50 L200 50 Q230 55 245 80 L270 130 L280 140 L280 160 L20 160 L20 140 Z" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.3)" stroke-width="2"/>
-                  <rect x="85" y="58" width="55" height="22" rx="4" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
-                  <rect x="145" y="58" width="55" height="22" rx="4" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
-                  <circle cx="70" cy="160" r="20" fill="#151515" stroke="rgba(201,168,76,0.4)" stroke-width="2"/>
-                  <circle cx="70" cy="160" r="10" fill="#1a1a1a" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-                  <circle cx="230" cy="160" r="20" fill="#151515" stroke="rgba(201,168,76,0.4)" stroke-width="2"/>
-                  <circle cx="230" cy="160" r="10" fill="#1a1a1a" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-                  <text x="150" y="185" text-anchor="middle" font-size="11" fill="rgba(201,168,76,0.5)" font-family="sans-serif">OYSTERS &amp; PEBBLES AUTOS</text>
-                </svg>
-              </div>
+              <img src="/images/gallery/showroom-2.jpg" alt="A vehicle outside the Oysters and Pebbles Autos showroom" class="about-img-photo" />
             </div>
             <div class="about-badge-float">
               <span class="about-badge-num">500+</span>
@@ -328,12 +338,12 @@ const filteredCars = computed(() =>
           </blockquote>
           <blockquote class="testimonial" v-reveal>
             <div class="stars" aria-label="5 stars">★★★★★</div>
-            <p>"I was skeptical at first, but the team walked me through financing options that actually worked for my salary. Driving my Camry now and couldn't be happier."</p>
+            <p>"I was skeptical at first, but the team walked me through financing options that actually worked for my salary. Driving my Corolla now and couldn't be happier."</p>
             <footer>
               <div class="testimonial-avatar">CI</div>
               <div>
                 <cite class="testimonial-name">Chukwudi I.</cite>
-                <span class="testimonial-detail">Abuja · Toyota Camry XSE</span>
+                <span class="testimonial-detail">Abuja · Toyota Corolla</span>
               </div>
             </footer>
           </blockquote>
@@ -356,11 +366,18 @@ const filteredCars = computed(() =>
             </div>
             <div class="contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.26 9.11 19.79 19.79 0 01.22 .5a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9a16 16 0 006.29 6.29l.78-.78a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:+2348000000000">0800 000 0000</a>
+              <span class="contact-phones">
+                <a href="tel:+2347030424072">+234 703 042 4072</a>,
+                <a href="tel:+2348080279969">+234 808 027 9969</a>,
+                <a href="tel:+2348139201079">+234 813 920 1079</a>
+              </span>
             </div>
             <div class="contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:info@oystersandpebblesautos.com">info@oystersandpebblesautos.com</a>
+              <span class="contact-phones">
+                <a href="mailto:info@oystersandpebblesautos.com">info@oystersandpebblesautos.com</a>,
+                <a href="mailto:support@oystersandpebblesautos.com">support@oystersandpebblesautos.com</a>
+              </span>
             </div>
             <div class="contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -369,7 +386,7 @@ const filteredCars = computed(() =>
           </div>
 
           <div class="contact-ctas">
-            <a href="https://wa.me/2348000000000?text=Hello!%20I'd%20like%20to%20book%20a%20test%20drive" class="btn-primary btn-lg" target="_blank" rel="noopener">
+            <a href="https://wa.me/2347030424072?text=Hello!%20I'd%20like%20to%20book%20a%20test%20drive" class="btn-primary btn-lg" target="_blank" rel="noopener">
               <WhatsAppIcon :size="16" />
               Book on WhatsApp
             </a>

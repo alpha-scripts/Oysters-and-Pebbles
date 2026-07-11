@@ -68,7 +68,7 @@ const filteredCars = computed(() =>
         <h2>We'll source it for you</h2>
         <p>Tell us what you're looking for and our team will search our network to find the perfect match — at the right price.</p>
         <div class="cta-actions">
-          <a href="https://wa.me/2348000000000?text=Hello!%20I'm%20looking%20for%20a%20specific%20vehicle." class="btn-primary btn-lg" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a href="https://wa.me/2347030424072?text=Hello!%20I'm%20looking%20for%20a%20specific%20vehicle." class="btn-primary btn-lg" target="_blank" rel="noopener">Chat on WhatsApp</a>
           <router-link to="/#contact" class="btn-ghost btn-lg">Contact us</router-link>
         </div>
       </div>
