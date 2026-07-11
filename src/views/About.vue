@@ -1,14 +1,14 @@
 <script setup>
 const team = [
-  { initials: 'AB', name: 'Adekunle O. Babawale', role: 'Managing Director', bio: "Founder with over six years of experience, leading Oysters and Pebbles Auto Limited's mission to provide quality vehicles at reasonable prices.", lead: true },
-  { initials: 'AO', name: 'Abimbola Olutosin', role: 'Chief Operating Officer', bio: 'Oversees daily operations and ensures our dealership runs smoothly to deliver exceptional customer experiences.' },
-  { initials: 'KB', name: 'Komolafe Bayowa O.', role: 'After Sales Manager', bio: 'Manages our after-sales service department, ensuring your vehicle continues to perform at its best.' },
-  { initials: 'AA', name: 'Adeyemi Aishat', role: 'Account Receivable', bio: 'Handles accounts receivable and financial operations with precision and professionalism.' },
-  { initials: 'EE', name: 'Owoicho E. Esther', role: 'Customer Care Advisory', bio: 'Provides dedicated customer care support to ensure every interaction exceeds expectations.' },
-  { initials: 'JP', name: 'Idoko John Pascal', role: 'General Services', bio: 'Manages general services and facility operations to keep our showroom running smoothly.' },
-  { initials: 'TA', name: 'Adeshina T. Adedunmoye', role: 'Senior Sales Consultant', bio: 'Our senior sales consultant with extensive knowledge of all brands and models we carry.' },
-  { initials: 'SA', name: 'Soeze Ayobamidele', role: 'IT Personnel', bio: 'Manages our IT infrastructure and digital systems to ensure seamless operations.' },
-  { initials: 'EO', name: 'Ekujumi Olabode', role: 'After Sales Personnel', bio: 'Provides skilled after-sales support and vehicle maintenance services.' }
+  { initials: 'AB', name: 'Adekunle O. Babawale', role: 'Managing Director', bio: "Founder with over six years of experience, leading Oysters and Pebbles Auto Limited's mission to provide quality vehicles at reasonable prices.", lead: true, photo: '/images/team/managing-director.jpg' },
+  { initials: 'AO', name: 'Abimbola Olutosin', role: 'Chief Operating Officer', bio: 'Oversees daily operations and ensures our dealership runs smoothly to deliver exceptional customer experiences.', photo: '/images/team/abimbola-olutosin.jpg' },
+  { initials: 'KB', name: 'Komolafe Bayowa O.', role: 'After Sales Manager', bio: 'Manages our after-sales service department, ensuring your vehicle continues to perform at its best.', photo: '/images/team/komolafe-bayowa.jpg' },
+  { initials: 'AA', name: 'Adeyemi Aishat', role: 'Account Receivable', bio: 'Handles accounts receivable and financial operations with precision and professionalism.', photo: '/images/team/adeyemi-aishat.jpg' },
+  { initials: 'EE', name: 'Owoicho E. Esther', role: 'Customer Care Advisory', bio: 'Provides dedicated customer care support to ensure every interaction exceeds expectations.', photo: '/images/team/owoicho-esther.jpg' },
+  { initials: 'JP', name: 'Idoko John Pascal', role: 'General Services', bio: 'Manages general services and facility operations to keep our showroom running smoothly.', photo: '/images/team/idoko-john-pascal.jpg' },
+  { initials: 'TA', name: 'Adeshina T. Adedunmoye', role: 'Senior Sales Consultant', bio: 'Our senior sales consultant with extensive knowledge of all brands and models we carry.', photo: '/images/team/adeshina-adedunmoye.jpg' },
+  { initials: 'SA', name: 'Soeze Ayobamidele', role: 'IT Personnel', bio: 'Manages our IT infrastructure and digital systems to ensure seamless operations.', photo: '/images/team/soeze-ayobamidele.jpg' },
+  { initials: 'EO', name: 'Ekujumi Olabode', role: 'After Sales Personnel', bio: 'Provides skilled after-sales support and vehicle maintenance services.', photo: '/images/team/ekujumi-olabode.jpg' }
 ]
 
 const partners = [
@@ -132,6 +132,8 @@ const partners = [
           <p class="section-sub">A passionate team of automotive professionals committed to making your car-buying experience seamless from start to finish.</p>
         </div>
 
+        <img src="/images/team/team-group.jpg" alt="The Oysters and Pebbles Autos team at the Ikeja showroom" class="team-photo" />
+
         <div class="team-grid">
           <article
             v-for="member in team"
@@ -140,7 +142,8 @@ const partners = [
             :class="{ 'team-card-lead': member.lead }"
             v-reveal
           >
-            <div class="team-avatar">{{ member.initials }}</div>
+            <img v-if="member.photo" :src="member.photo" :alt="member.name" class="team-avatar team-avatar-photo" />
+            <div v-else class="team-avatar">{{ member.initials }}</div>
             <div class="team-info">
               <h3>{{ member.name }}</h3>
               <span class="team-role">{{ member.role }}</span>
