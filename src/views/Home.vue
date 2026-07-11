@@ -3,12 +3,14 @@ import { computed, ref } from 'vue'
 import CarCard from '../components/CarCard.vue'
 import FilterToolbar from '../components/FilterToolbar.vue'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon.vue'
-import { cars, filterOptions } from '../data/cars'
+import ContactForm from '../components/ContactForm.vue'
+import { filterOptions } from '../data/cars'
+import { useCars } from '../composables/useCars'
 
 const activeFilter = ref('all')
-const homeCars = cars.filter((c) => c.featuredOnHome)
+const { cars: homeCars, loading, error } = useCars({ featured: 'true' })
 const filteredCars = computed(() =>
-  activeFilter.value === 'all' ? homeCars : homeCars.filter((c) => c.tags.includes(activeFilter.value))
+  activeFilter.value === 'all' ? homeCars.value : homeCars.value.filter((c) => c.tags.includes(activeFilter.value))
 )
 </script>
 
@@ -136,9 +138,11 @@ const filteredCars = computed(() =>
 
         <FilterToolbar v-model="activeFilter" :filters="filterOptions" />
 
-        <div class="car-grid" id="car-grid">
-          <CarCard v-for="car in filteredCars" :key="car.id" :car="car" variant="featured" />
+        <div v-if="!loading && !error" class="car-grid" id="car-grid">
+          <CarCard v-for="car in filteredCars" :key="car._id" :car="car" variant="featured" />
         </div>
+        <p v-else-if="loading" class="gallery-empty" role="status">Loading inventory…</p>
+        <p v-else class="gallery-empty" role="status">Couldn't load inventory right now. Please try again shortly.</p>
       </div>
     </section>
 
@@ -371,6 +375,8 @@ const filteredCars = computed(() =>
             </a>
             <a href="mailto:info@oystersandpebblesautos.com" class="btn-ghost btn-lg">Send an email</a>
           </div>
+
+          <ContactForm />
         </div>
 
         <div class="contact-map" aria-label="Map placeholder — 14 Oba Akran Avenue, Ikeja Lagos">

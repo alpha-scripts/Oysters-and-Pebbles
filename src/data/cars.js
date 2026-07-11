@@ -15,7 +15,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: 'New',
     imageBase: 'https://images.unsplash.com/photo-1759731688111-0c47be0cdd7c?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Land Cruiser 300 2023",
     featuredOnHome: true
   },
@@ -32,7 +32,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: 'Featured',
     imageBase: 'https://images.unsplash.com/photo-1700884520248-92092bd21e63?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Lexus RX 350 F Sport 2022",
     featuredOnHome: true
   },
@@ -49,7 +49,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: 'New',
     imageBase: 'https://images.unsplash.com/photo-1691022437763-a7f18546b48e?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the GAC GS8 Premium 2024",
     featuredOnHome: true
   },
@@ -66,7 +66,7 @@ export const cars = [
     badgeCategory: 'Sedan',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1571095839087-5f237247ee28?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Camry XSE 2023",
     featuredOnHome: true
   },
@@ -83,7 +83,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1739569383701-0f19d628fb0a?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Mitsubishi Outlander PHEV 2023",
     featuredOnHome: true
   },
@@ -100,7 +100,7 @@ export const cars = [
     badgeCategory: 'Electric',
     badgeExtra: 'New',
     imageBase: 'https://images.unsplash.com/photo-1760435107985-40b6872c8c97?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the BYD Atto 3 2024",
     featuredOnHome: true
   },
@@ -117,7 +117,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: 'New',
     imageBase: 'https://images.unsplash.com/photo-1609184166822-bd1f1b991a06?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Highlander 2023",
     featuredOnHome: false
   },
@@ -134,7 +134,7 @@ export const cars = [
     badgeCategory: 'Sedan',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1626737953173-fde0f74ba77b?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Lexus ES 350 Luxury 2021",
     featuredOnHome: false
   },
@@ -151,7 +151,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1606611013016-969c19d4b2c8?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Honda CR-V 2022",
     featuredOnHome: false
   },
@@ -168,7 +168,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1615905655186-a84db901cce0?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Hyundai Tucson 2023",
     featuredOnHome: false
   },
@@ -185,7 +185,7 @@ export const cars = [
     badgeCategory: 'SUV',
     badgeExtra: null,
     imageBase: 'https://images.unsplash.com/photo-1609708536965-53a4ca01c480?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Ford Explorer 2022",
     featuredOnHome: false
   },
@@ -202,7 +202,7 @@ export const cars = [
     badgeCategory: 'Sedan',
     badgeExtra: 'New',
     imageBase: 'https://images.unsplash.com/photo-1590362891990-f8ec66885735?fm=jpg&q=60&auto=format&fit=crop',
-    status: 'In stock',
+    status: 'in_stock',
     whatsappMessage: "I'm interested in the Honda Accord 2022",
     featuredOnHome: false
   }

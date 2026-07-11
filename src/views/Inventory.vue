@@ -3,15 +3,17 @@ import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import CarCard from '../components/CarCard.vue'
 import FilterToolbar from '../components/FilterToolbar.vue'
-import { cars, filterOptions } from '../data/cars'
+import { filterOptions } from '../data/cars'
+import { useCars } from '../composables/useCars'
 
 const route = useRoute()
 const validFilters = filterOptions.map((f) => f.value)
 const initialFilter = validFilters.includes(route.query.filter) ? route.query.filter : 'all'
 
 const activeFilter = ref(initialFilter)
+const { cars, loading, error } = useCars()
 const filteredCars = computed(() =>
-  activeFilter.value === 'all' ? cars : cars.filter((c) => c.tags.includes(activeFilter.value))
+  activeFilter.value === 'all' ? cars.value : cars.value.filter((c) => c.tags.includes(activeFilter.value))
 )
 </script>
 
@@ -36,22 +38,27 @@ const filteredCars = computed(() =>
 
     <section class="section inventory-section" id="gallery">
       <div class="container">
-        <div class="gallery-toolbar inventory-toolbar">
-          <FilterToolbar
-            v-model="activeFilter"
-            :filters="filterOptions"
-            :visible-count="filteredCars.length"
-            :total-count="cars.length"
-          />
-        </div>
+        <template v-if="!loading && !error">
+          <div class="gallery-toolbar inventory-toolbar">
+            <FilterToolbar
+              v-model="activeFilter"
+              :filters="filterOptions"
+              :visible-count="filteredCars.length"
+              :total-count="cars.length"
+            />
+          </div>
 
-        <div class="gallery-grid">
-          <CarCard v-for="car in filteredCars" :key="car.id" :car="car" variant="gallery" />
-        </div>
+          <div class="gallery-grid">
+            <CarCard v-for="car in filteredCars" :key="car._id" :car="car" variant="gallery" />
+          </div>
 
-        <p v-if="!filteredCars.length" class="gallery-empty" role="status">
-          No vehicles match this filter. Try another category or <router-link to="/#contact">contact us</router-link> for custom sourcing.
-        </p>
+          <p v-if="!filteredCars.length" class="gallery-empty" role="status">
+            No vehicles match this filter. Try another category or <router-link to="/#contact">contact us</router-link> for custom sourcing.
+          </p>
+        </template>
+
+        <p v-else-if="loading" class="gallery-empty" role="status">Loading inventory…</p>
+        <p v-else class="gallery-empty" role="status">Couldn't load inventory right now. Please try again shortly.</p>
       </div>
     </section>
 

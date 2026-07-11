@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vercel dev",
     "dev:vite-only": "vite",
+    "dev:api": "node --env-file=.env api/dev-server.js",
     "build": "vite build",
     "preview": "vite preview",
-    "seed": "node seed/cars.js"
+    "seed": "node --env-file=.env seed/cars.js"
   },
   "dependencies": {
     "vue": "^3.4.21",

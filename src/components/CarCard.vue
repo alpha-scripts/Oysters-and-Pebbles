@@ -14,6 +14,9 @@ const waHref = computed(
 )
 const isFeaturedBadge = computed(() => props.car.badgeExtra === 'Featured')
 const catBadgeClass = computed(() => (props.car.badgeCategory === 'Electric' ? 'badge-ev' : 'badge-cat'))
+const statusLabel = computed(() =>
+  props.car.status.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase())
+)
 </script>
 
 <template>
@@ -84,7 +87,7 @@ const catBadgeClass = computed(() => (props.car.badgeCategory === 'Electric' ? '
       <p class="gallery-specs">{{ specs.join(' · ') }}</p>
       <div class="gallery-footer">
         <span class="gallery-price">₦{{ car.price.toLocaleString('en-NG') }}</span>
-        <span class="gallery-status">{{ car.status }}</span>
+        <span class="gallery-status">{{ statusLabel }}</span>
       </div>
     </div>
   </article>
