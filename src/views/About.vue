@@ -142,7 +142,7 @@ const partners = [
             :class="{ 'team-card-lead': member.lead }"
             v-reveal
           >
-            <img v-if="member.photo" :src="member.photo" :alt="member.name" class="team-avatar team-avatar-photo" />
+            <img v-if="member.photo" :src="member.photo" :alt="member.name" class="team-avatar-photo" />
             <div v-else class="team-avatar">{{ member.initials }}</div>
             <div class="team-info">
               <h3>{{ member.name }}</h3>
