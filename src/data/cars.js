@@ -167,7 +167,7 @@ export const cars = [
     tags: ['suv'],
     badgeCategory: 'SUV',
     badgeExtra: null,
-    imageBase: '/images/gallery/car-1.jpg',
+    imageBase: '/images/gallery/car-grand-highlander.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Grand Highlander 2024",
     featuredOnHome: false
@@ -184,7 +184,7 @@ export const cars = [
     tags: ['suv', 'new'],
     badgeCategory: 'SUV',
     badgeExtra: 'New',
-    imageBase: '/images/gallery/car-2.jpg',
+    imageBase: '/images/gallery/car-fortuner.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Fortuner 2025",
     featuredOnHome: false
@@ -201,7 +201,7 @@ export const cars = [
     tags: ['suv', 'new'],
     badgeCategory: 'Truck',
     badgeExtra: 'New',
-    imageBase: '/images/gallery/car-3.jpg',
+    imageBase: '/images/gallery/car-hilux.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Hilux 2025",
     featuredOnHome: false
@@ -218,7 +218,7 @@ export const cars = [
     tags: ['suv', 'new'],
     badgeCategory: 'SUV',
     badgeExtra: 'New',
-    imageBase: '/images/gallery/car-4.jpg',
+    imageBase: '/images/gallery/car-land-cruiser-used.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Land Cruiser 2024",
     featuredOnHome: false
@@ -235,7 +235,7 @@ export const cars = [
     tags: ['suv'],
     badgeCategory: 'SUV',
     badgeExtra: null,
-    imageBase: '/images/gallery/car-5.jpg',
+    imageBase: '/images/gallery/car-lexus-nx.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Lexus NX 2021",
     featuredOnHome: false
@@ -252,7 +252,7 @@ export const cars = [
     tags: ['suv'],
     badgeCategory: 'SUV',
     badgeExtra: null,
-    imageBase: '/images/gallery/car-6.jpg',
+    imageBase: '/images/gallery/car-palisade.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Hyundai Palisade 2024",
     featuredOnHome: false
@@ -269,7 +269,7 @@ export const cars = [
     tags: ['suv'],
     badgeCategory: 'SUV',
     badgeExtra: null,
-    imageBase: '/images/gallery/car-7.jpg',
+    imageBase: '/images/gallery/car-prado.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Prado 2024",
     featuredOnHome: false
@@ -286,7 +286,7 @@ export const cars = [
     tags: ['suv', 'new'],
     badgeCategory: 'SUV',
     badgeExtra: 'New',
-    imageBase: '/images/gallery/car-1.jpg',
+    imageBase: '/images/gallery/car-landcruiser-prado-new.webp',
     status: 'in_stock',
     whatsappMessage: "I'm interested in the Toyota Landcruiser Prado 2024",
     featuredOnHome: false
